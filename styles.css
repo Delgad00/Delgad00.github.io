@@ -27,8 +27,17 @@
     bottom: 40px;
     width: 450px;
     display: flex;
-    justify-content: space-around;
+    justify-content:last baseline;
+    margin-right: -225px;
   }
+.home-sci a {
+    margin-right: 25px; /* Espacio entre los íconos de los botones */
+  }
+  
+.home-sci a:last-child {
+    margin-right: -20%; /* Eliminar el margen derecho del último ícono */
+  }
+  
   
   .home-sci a {
     position: relative;
@@ -47,9 +56,9 @@
   
 
 .fond2 {
-  background-color: #ffffff;
+  background-color: #000000bd;
   margin-top: 2%;
-  margin-bottom: -5%;
+  margin-bottom: -7%;
   padding-top: 10%;
   padding-bottom: 18%;
   margin-left: -10%;
@@ -80,7 +89,7 @@
   width: 240%;
 }
 .img4 {
-  padding-top: -0px;
+  padding-top: -2%;
 }
 .fondo3 {
   background-image: url(482.jpg);
@@ -98,36 +107,47 @@
 /*b7bab5
 3C5DA2*/
 .border-derecha {
-  border-right: 2px solid #FFFB33;
+  border-right: 2px solid #ff7700;
 }
-.subir {
-  padding-top: -90px;
-  margin-top: -106px;
-}
-.h2r {
-    background: linear-gradient(to right, white, rgb(255, 102, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: difuminar 3s linear infinite alternate;
-  }
-  
-  @keyframes difuminar {
-    0% { background-position: 100% center; }
-    100% { background-position: 0% center; }
-  }
-  
 
-h2 {
-    background: linear-gradient(to right, white, rgb(255, 102, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: difuminar 3s linear infinite alternate;
+.h2r {
+  text-align: center;
+  text-shadow: 0 0 5px #ff5100;
+  color: #ffd970;
+}
+
+.h22 {
+  text-align: center;
+  text-shadow: 0 0 5px #ff5100;
+  color: #ffd970;
+  margin-top: -43%;
+  margin-bottom: 11%;
+}
+
+.h21 {
+  text-align: center;
+  padding: 20px;
+}
+
+.neon-title {
+  font-size: 55px;
+  margin: 0;
+  position: relative;
+  color: #fdda94;
+  text-shadow: 0 0 5px #ffaa00, 0 0 10px #ffaa00;
+  animation: neon-animation 6s linear infinite alternate;
+}
+
+@keyframes neon-animation {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 26px #ccff00, 0 0 18px #ffff00, 0 0 12px #00fffb;
   }
-  
-  @keyframes difuminar {
-    0% { background-position: 100% center; }
-    100% { background-position: 0% center; }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 26px #ff6f00, 0 0 18px #ff6f00, 0 0 12px #ff4800;
   }
+}
   
   
 .color3 {
@@ -146,7 +166,7 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-size: 75px;
-    background: linear-gradient(to right, black, rgb(255, 119, 0));
+    background: linear-gradient(to right, black, rgb(237, 145, 65));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: difuminar 3s linear infinite;
@@ -158,7 +178,7 @@ h2 {
   }
   
 .mod-subtext {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding-left: 20%;
   font-size: 20px;
@@ -168,21 +188,33 @@ h2 {
   width: 100%;
   color: #fff;
   font-size: 14px;
+  animation: neon-glow 3s ease-in-out infinite;
 }
+
+@keyframes neon-glow {
+  0%, 100% { box-shadow: 0 0 0.2px #fff; }
+  50% { box-shadow: 0 0 0.2px #fff, 0 0 85px #ff6f00, 0 0 45px #ff6f00, 0 0 25px #ff7700, 0 0 11px #ff5500, 0 0 7px #ffa200, 0 0 4px #ff871e; }
+}
+
 
 .contenedor-izquierdo {
   flex: 1;
   background-color: #000000;
   text-align: center;
-  padding-top: -60px;
+  padding-top: 50px;
+  border-left: chocolate;
 }
 
 .contenedor-izquierdo-img {
-  margin-top: 2%;
-  width: 65%;
+  padding-bottom: 3%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  
+  width: 40%;
 }
 
 .contenedor-derecho {
+  padding-top: 3%;
   flex: 1;
   background-color: #101010;
   text-align: center;
@@ -210,7 +242,7 @@ h2 {
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#25d366;
+	background-color:#fc6900;
 	color:#FFF;
 	border-radius:70px;
 	text-align:center;
@@ -221,7 +253,7 @@ h2 {
 .float:hover {
 	text-decoration: none;
 	color: #FFF;
-  background-color:#1ab152;
+  background-color:#b1591a;
     
     animation: shake 1s;
 
@@ -267,7 +299,7 @@ h2 {
     left: 0;
     right: 0;
     z-index: 1;
-    box-shadow: 0 0 10px #ffffff, 0 0 20px #ff6f00;
+    box-shadow: 0 0 0.2px #fff, 0 0 2px #ff871e, 0 0 4px #ffa200, 0 0 6px #ff5500, 0 0 12px #ff7700, 0 0 18px #ff6f00, 0 0 26px #ff6f00;
 
   }
   
@@ -476,17 +508,22 @@ li {
   }
 
   .textaboutme {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: justify;
     padding-top: 3%;
     margin-left: 2%;
     margin-right: 2%;
-    border-right: 2px solid rgb(255, 102, 0);
-    border-left: 2px solid rgb(255, 102, 0);
+    border-right: 3px solid rgb(255, 102, 0);
+    border-left: 3px solid rgb(255, 102, 0);
     padding-left: 10%;
     padding-right: 10%;
   }
   
+  .carcenter {
+    align-items: center;
+    padding-left: 34%;
+    padding-top: 2%;
+  }
   .fondo4 {
     background-color: white;
   }
@@ -651,3 +688,4 @@ li {
 .img-mod33 {
   width: 40%;
 }
+
