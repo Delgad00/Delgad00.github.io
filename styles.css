@@ -18,7 +18,7 @@
         height: auto; /* Mantener la proporción de la imagen */
      }
 .logo1 {
-        width: 50%; /* Reducir a la mitad del tamaño original */
+        width: 30%; /* Reducir a la mitad del tamaño original */
         height: auto;
 }
 
@@ -110,6 +110,30 @@
   border-right: 2px solid #ff7700;
 }
 
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: #ff6200;
+  border-radius: 4rem;
+  box-shadow: #ff6200;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+.movimg{
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 9%;
+  margin-bottom: 2%;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
 .h2r {
   text-align: center;
   text-shadow: 0 0 5px #ff5100;
@@ -127,6 +151,15 @@
 .h21 {
   text-align: center;
   padding: 20px;
+  margin-left: 28%;
+  margin-bottom: -4%;
+}
+
+.delgaloca {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .neon-title {
@@ -162,7 +195,7 @@
 }
 
 .mod {
-    padding-left: 20%;
+    padding-left: 40%;
     margin-bottom: 30px;
     text-align: center;
     font-size: 75px;
@@ -182,6 +215,7 @@
   text-align: center;
   padding-left: 20%;
   font-size: 20px;
+  margin-left: 10%;
 }
 .contenedor {
   display: flex;
