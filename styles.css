@@ -13,6 +13,8 @@
   .logo img {
     margin: 0 0.2em;
   }
+
+  delgaloca
 .imglogo {
         width: 30%; /* Reducir a la mitad del tamaño original */
         height: auto; /* Mantener la proporción de la imagen */
@@ -56,9 +58,12 @@
   
 
 .fond2 {
-  background-color: #000000bd;
+  background-image: url('./EDM_dancing_orange_lights_people_festivals-116756.jpg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
   margin-top: 2%;
-  margin-bottom: -7%;
+  margin-bottom: -5%;
   padding-top: 10%;
   padding-bottom: 18%;
   margin-left: -10%;
@@ -122,6 +127,15 @@
   font-weight: 600;
   transition: .5s ease;
 }
+.mod-subtext {
+  margin-top: 10%;
+}
+.btn1 {
+  font-size: 1.6rem;
+  color: #8e8e8e;
+  border-color: solid white;
+  border-radius: 4px;
+}
 .movimg{
   text-align: center;
   align-items: center;
@@ -130,7 +144,7 @@
   margin-bottom: 2%;
 }
 
-.btn:hover {
+.btn1:hover {
   box-shadow: none;
 }
 
@@ -154,12 +168,14 @@
   margin-left: 28%;
   margin-bottom: -4%;
 }
-
+.fond2
 .delgaloca {
   width: 50%;
-  margin-left: auto;
+  margin-left: 12%;
   margin-right: auto;
   display: block;
+  align-items: center;
+  
 }
 
 .neon-title {
