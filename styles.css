@@ -14,11 +14,11 @@
     margin: 0 0.2em;
   }
 
-  delgaloca
 .imglogo {
-        width: 30%; /* Reducir a la mitad del tamaño original */
-        height: auto; /* Mantener la proporción de la imagen */
-     }
+    max-width: 200px; /* Cambia el valor según lo que necesites */
+    height: auto;
+}
+
 .logo1 {
         width: 30%; /* Reducir a la mitad del tamaño original */
         height: auto;
